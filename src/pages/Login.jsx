@@ -18,10 +18,13 @@ function Login() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       console.log(toast.success);
+      alert("User logged in successfully!")
+
       toast.success("User logged in successfully!", { position: "top-center" });
       console.log("hererere");
       navigate("/"); // Redirect to the home page
     } catch (error) {
+      alert(error.message)
       toast.error(error.message, { position: "bottom-center" });
     }
   };

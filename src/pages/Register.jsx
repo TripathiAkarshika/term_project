@@ -26,9 +26,9 @@ function Register() {
           });
         }
         console.log("User Registered Successfully!!");
-        alert("User Registered Successfully!!")
+        alert("User Registered Successfully!! Continue to Login")
 
-        toast.success("User Registered Successfully!!", {
+        toast.success("User Registered Successfully!! ", {
           position: "top-center",
         });
       } catch (error) {
